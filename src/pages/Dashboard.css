@@ -1,0 +1,997 @@
+/* =========================================================
+   SAFEHER DASHBOARD
+========================================================= */
+
+.dashboard-page {
+  min-height: 100vh;
+
+  background: #faf8f7;
+
+  color: #202020;
+
+  font-family: "Inter", Arial, sans-serif;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.dashboard-main {
+
+  width: 100%;
+
+  padding: 45px 55px;
+
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.dashboard-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin-bottom: 30px;
+}
+
+
+.dashboard-small-title,
+.card-label,
+.section-heading span,
+.sos-card-header span {
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  font-weight: 700;
+
+  color: #a45a64;
+}
+
+
+.dashboard-header h1 {
+
+  margin: 8px 0 7px;
+
+  font-family: Georgia, serif;
+
+  font-size: 39px;
+
+  font-weight: 500;
+
+  color: #292327;
+}
+
+
+.dashboard-subtitle {
+
+  margin: 0;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   NOTIFICATION
+========================================================= */
+
+.notification-button {
+
+  position: relative;
+
+  border: 1px solid #e6dfdc;
+
+  background: white;
+
+  width: 45px;
+
+  height: 45px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #555;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.notification-button:hover {
+
+  background: #faf1f2;
+
+  border-color: #dfc9cc;
+
+  transform: translateY(-1px);
+}
+
+
+.notification-dot {
+
+  position: absolute;
+
+  width: 7px;
+
+  height: 7px;
+
+  background: #b25864;
+
+  border-radius: 50%;
+
+  top: 10px;
+
+  right: 10px;
+}
+
+
+/* =========================================================
+   SAFETY STATUS
+========================================================= */
+
+.safety-status-card {
+
+  background: white;
+
+  border: 1px solid #eee7e5;
+
+  border-radius: 20px;
+
+  padding: 22px 26px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 22px;
+
+  box-shadow:
+    0 4px 20px rgba(60, 40, 40, 0.025);
+}
+
+
+.safety-status-left {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+}
+
+
+.status-icon {
+
+  width: 57px;
+
+  height: 57px;
+
+  background: #f2e7e8;
+
+  color: #a6535e;
+
+  border-radius: 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.status-label {
+
+  color: #999;
+
+  font-size: 9px;
+
+  letter-spacing: 1.7px;
+
+  font-weight: 700;
+}
+
+
+.safety-status-card h2 {
+
+  margin: 5px 0;
+
+  font-size: 19px;
+}
+
+
+.safety-status-card p {
+
+  margin: 0;
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+
+.status-check {
+
+  color: #699574;
+}
+
+
+/* =========================================================
+   SOS + SCORE
+========================================================= */
+
+.dashboard-grid {
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr;
+
+  gap: 22px;
+}
+
+
+/* =========================================================
+   SOS CARD
+========================================================= */
+
+.sos-card {
+
+  background: #ad5964;
+
+  color: white;
+
+  border-radius: 22px;
+
+  padding: 29px;
+
+  min-height: 245px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 12px 30px rgba(120, 60, 70, 0.12);
+}
+
+
+.sos-card-header {
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+
+.sos-card-header span {
+
+  color: #f8dfe2;
+}
+
+
+.sos-card h2 {
+
+  font-family: Georgia, serif;
+
+  font-size: 28px;
+
+  font-weight: 500;
+
+  margin: 8px 0;
+}
+
+
+.sos-card p {
+
+  color: #f7e7e8;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+
+  max-width: 500px;
+}
+
+
+.sos-button {
+
+  margin-top: 17px;
+
+  border: 0;
+
+  background: white;
+
+  color: #a6535e;
+
+  border-radius: 12px;
+
+  padding: 13px 19px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-weight: 700;
+
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.sos-button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 7px 20px rgba(60, 30, 30, 0.15);
+}
+
+
+.sos-card small {
+
+  display: block;
+
+  margin-top: 13px;
+
+  color: #f4d9dc;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   SAFETY SCORE
+========================================================= */
+
+.score-card {
+
+  background: white;
+
+  border: 1px solid #eee7e5;
+
+  border-radius: 22px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 4px 20px rgba(60, 40, 40, 0.025);
+}
+
+
+.card-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  color: #a6535e;
+}
+
+
+.score-card h2 {
+
+  font-family: Georgia, serif;
+
+  font-weight: 500;
+
+  font-size: 24px;
+
+  margin: 7px 0;
+
+  color: #222;
+}
+
+
+.score-circle {
+
+  width: 105px;
+
+  height: 105px;
+
+  border: 9px solid #eac9ce;
+
+  border-left-color: #ad5964;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin: 15px auto 10px;
+
+  box-sizing: border-box;
+}
+
+
+.score-circle strong {
+
+  font-size: 29px;
+}
+
+
+.score-circle span {
+
+  color: #888;
+
+  font-size: 12px;
+}
+
+
+.score-card p {
+
+  color: #888;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   QUICK ACTIONS
+========================================================= */
+
+.dashboard-section {
+
+  margin-top: 35px;
+}
+
+
+.section-heading h2 {
+
+  font-family: Georgia, serif;
+
+  font-weight: 500;
+
+  font-size: 25px;
+
+  margin: 6px 0 18px;
+}
+
+
+.quick-actions {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 13px;
+}
+
+
+.action-card {
+
+  background: white;
+
+  border: 1px solid #eee7e5;
+
+  border-radius: 17px;
+
+  padding: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  box-sizing: border-box;
+}
+
+
+.action-card:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 25px rgba(80, 50, 50, 0.07);
+
+  border-color: #e5d8d8;
+}
+
+
+.action-card h3 {
+
+  margin: 0 0 5px;
+
+  font-size: 14px;
+}
+
+
+.action-card p {
+
+  margin: 0;
+
+  font-size: 11px;
+
+  color: #888;
+}
+
+
+.action-card > svg {
+
+  margin-left: auto;
+
+  color: #aaa;
+}
+
+
+.action-icon {
+
+  width: 43px;
+
+  height: 43px;
+
+  border-radius: 13px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+.journey-icon {
+
+  background: #f1e9f4;
+
+  color: #825c91;
+}
+
+
+.contacts-icon {
+
+  background: #f6e8e9;
+
+  color: #a6535e;
+}
+
+
+.help-icon {
+
+  background: #eaf1f0;
+
+  color: #537d77;
+}
+
+
+.incident-icon {
+
+  background: #f5eee4;
+
+  color: #967045;
+}
+
+
+/* =========================================================
+   JOURNEY
+========================================================= */
+
+.journey-card {
+
+  margin-top: 35px;
+
+  background: #f1e7e8;
+
+  border-radius: 21px;
+
+  padding: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  box-sizing: border-box;
+}
+
+
+.journey-content {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+}
+
+
+.journey-icon-large {
+
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 15px;
+
+  background: white;
+
+  color: #a6535e;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+.journey-card h2 {
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+
+  font-weight: 500;
+
+  margin: 6px 0;
+}
+
+
+.journey-card p {
+
+  color: #777;
+
+  font-size: 12px;
+
+  margin: 0;
+
+  max-width: 600px;
+
+  line-height: 1.5;
+}
+
+
+.journey-button,
+.info-card button {
+
+  border: 0;
+
+  background: #ad5964;
+
+  color: white;
+
+  padding: 12px 17px;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  font-family: inherit;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.journey-button:hover,
+.info-card button:hover {
+
+  background: #9f4f5a;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   BOTTOM INFORMATION
+========================================================= */
+
+.bottom-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+
+  margin-top: 22px;
+
+  margin-bottom: 30px;
+}
+
+
+.info-card {
+
+  background: white;
+
+  border: 1px solid #eee7e5;
+
+  border-radius: 18px;
+
+  padding: 23px;
+}
+
+
+.info-card-title {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #a6535e;
+}
+
+
+.info-card-title h3 {
+
+  color: #222;
+
+  font-size: 15px;
+}
+
+
+.info-card p {
+
+  color: #888;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+}
+
+
+.info-card button {
+
+  font-size: 11px;
+
+  margin-top: 10px;
+}
+
+
+.activity-item {
+
+  display: flex;
+
+  gap: 10px;
+
+  align-items: center;
+
+  font-size: 12px;
+
+  color: #777;
+
+  margin-top: 13px;
+}
+
+
+.activity-item svg {
+
+  color: #779a80;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+button {
+
+  font-family: inherit;
+}
+
+
+button:focus-visible {
+
+  outline: 2px solid #ad5964;
+
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .dashboard-main {
+
+    padding: 35px 25px;
+  }
+
+
+  .dashboard-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .dashboard-main {
+
+    padding: 25px 17px;
+  }
+
+
+  .dashboard-header h1 {
+
+    font-size: 30px;
+  }
+
+
+  .quick-actions {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .journey-card {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .journey-button {
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+
+  .bottom-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .dashboard-main {
+
+    padding: 22px 14px;
+  }
+
+
+  .dashboard-header {
+
+    gap: 15px;
+  }
+
+
+  .dashboard-header h1 {
+
+    font-size: 27px;
+  }
+
+
+  .dashboard-subtitle {
+
+    font-size: 13px;
+  }
+
+
+  .notification-button {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+  }
+
+
+  .safety-status-card {
+
+    padding: 18px;
+  }
+
+
+  .safety-status-left {
+
+    gap: 12px;
+  }
+
+
+  .status-icon {
+
+    width: 48px;
+
+    height: 48px;
+  }
+
+
+  .safety-status-card h2 {
+
+    font-size: 17px;
+  }
+
+
+  .sos-card {
+
+    padding: 23px;
+  }
+
+
+  .score-card {
+
+    padding: 23px;
+  }
+
+
+  .journey-card {
+
+    padding: 20px;
+  }
+
+
+  .journey-content {
+
+    align-items: flex-start;
+  }
+
+
+  .info-card {
+
+    padding: 20px;
+  }
+
+}
